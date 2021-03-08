@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Enrique Molina's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 
@@ -38,10 +38,11 @@
 
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <!-- We create a custom attribute in our divs to use it from js-->
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">Theme options will be saved for <br>your next visit</p>
@@ -137,6 +138,7 @@
                             <h6 class="post-title" >Company Directory</h6>
                             <p class="post-intro" >This is a responsive website created to manage the staff in a company</p>
                             <p>It's created using JavaScript, PHP, MySQL and Bootstrap. It allows to Create, Read, Update and Delete information about employees, departments and locations. It has a consistent design so the information is kept consistent and safe all the time. You can use the app from a web browser or from a smartphone.</p>
+                            <a href="post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -186,6 +188,6 @@
 
         </div>
     </section>
-    
+    <script src="./js/main.js"></script>
 </body>
 </html>
